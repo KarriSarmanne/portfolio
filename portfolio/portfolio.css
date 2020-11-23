@@ -1,0 +1,29 @@
+body{
+  background: #a4d3e9;
+  text-align: center;
+  width: 60%;
+  margin: auto;
+}
+header{
+  background: #4294ff;
+  padding: 1px;
+}
+
+.opinnot{
+  margin: auto;
+}
+.opinnotTaulukko{
+  background: #0080ff54;
+  text-align: center;
+  align-self: center;
+}
+
+.lomake{
+  float: ;
+  display: ;
+}
+.lomakeElementti{
+  float: none;
+  display: inline-block;
+  width: 50%;
+}
