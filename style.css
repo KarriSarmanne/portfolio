@@ -1,0 +1,56 @@
+body{
+  background-color: #e7f2ff;
+  color: #202020;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 11px;
+}
+header{
+  text-align: center;
+  padding: 5px 10px;
+  background: #6969ff;
+}
+h1{
+  margin: 25px auto;
+}
+
+
+
+.opinnot{
+  margin-top: 10px;
+  border: 1px #6969ff solid;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+
+
+.alue1{
+  width: 70%;
+  margin: auto;
+  border: double;
+  border-color: #6969ff;
+}
+.alue1 h1{
+  padding-left: 10px;
+}
+.lomake{
+  display: block;
+  padding: 10px 10px;
+}
+.lomakeElementti input, .lomakeElementti textarea, .lomakeElementti select{
+  width: 100%;
+}
+.laatikot{
+
+}
+.laatikko{
+  float: left;
+  width: 25%;
+  border: 2px solid black;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-top: 25px;
+}
