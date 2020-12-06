@@ -29,6 +29,7 @@ h1{
 
 .alue1{
   width: 70%;
+  padding: 10px 10px;
   margin: auto;
   border: double;
   border-color: #6969ff;
@@ -36,15 +37,42 @@ h1{
 .alue1 h1{
   padding-left: 10px;
 }
+
+
+.navigaatioDIV{
+  background: #000;
+  height: 200px;
+  position: fixed;
+  top: 100px;
+  left: 10px;
+}
+.navigaatio{
+  list-style-type: none;
+  margin: 0;
+  padding: 10px 10px;
+  display: block;
+  width: 150px;
+  height: 15px;
+}
+.nappula{
+  color: #fff;
+}
+.nappula:hover{
+  background: #ff0000;
+  padding: 5px 5px;
+}
+.nappula:active{
+  background: #fff;
+  color: #000;
+}
+
+
 .lomake{
   display: block;
   padding: 10px 10px;
 }
 .lomakeElementti input, .lomakeElementti textarea, .lomakeElementti select{
   width: 100%;
-}
-.laatikot{
-
 }
 .laatikko{
   float: left;
