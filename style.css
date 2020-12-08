@@ -18,13 +18,17 @@ h1{
 
 
 .opinnot{
+  width: 33%;
+  margin: auto;
   margin-top: 10px;
   border: 1px #6969ff solid;
   padding: 20px;
   border-radius: 20px;
   text-align: center;
 }
-
+#opinnotTaulukko{
+  margin: auto;
+}
 
 
 .alue1{
@@ -39,31 +43,32 @@ h1{
 }
 
 
+
 .navigaatioDIV{
   background: #000;
-  height: 200px;
+  height: 75px;
   position: fixed;
   top: 100px;
-  left: 10px;
+  left: 20px;
 }
 .navigaatio{
   list-style-type: none;
   margin: 0;
   padding: 10px 10px;
   display: block;
-  width: 150px;
+  width: 175px;
   height: 15px;
 }
 .nappula{
   color: #fff;
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
 }
 .nappula:hover{
-  background: #ff0000;
-  padding: 5px 5px;
+  color: #ff0000;
 }
 .nappula:active{
-  background: #fff;
-  color: #000;
+  color: #fff;
 }
 
 

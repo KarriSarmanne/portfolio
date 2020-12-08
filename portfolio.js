@@ -2,7 +2,7 @@ const nimi = "Karri Sarmanne"
 let ika = 16
 
 
-var opiskelu = true;
+const opiskelu;
 
 if (opiskelu = true){
   const opiskelu = "opiskelija"
