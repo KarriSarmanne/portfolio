@@ -1,22 +1,22 @@
 const nimi = "Karri Sarmanne";
-let ika = 16;
+let ikani = 16;
 let opiskelija = true;
 
 if(opiskelija == true){
   let opiskelija = "opiskelija";
-  const surffaajalle = `Hei sivuilleni surffaaja, olen ${nimi} ja olen ${ika} vuotias ${opiskelija}`;
+  const surffaajalle = `Hei sivuilleni surffaaja, olen ${nimi} ja olen ${ikani} vuotias ${opiskelija}`;
   console.log(surffaajalle);
 }else{
   let opiskelija = "ammattilainen";
-  const surffaajalle = `Hei sivuilleni surffaaja, olen ${nimi} ja olen ${ika} vuotias ${opiskelija}`;
+  const surffaajalle = `Hei sivuilleni surffaaja, olen ${nimi} ja olen ${ikani} vuotias ${opiskelija}`;
   console.log(surffaajalle);
 };
 
 const ystavat = ['Roope Pesonen', 'Leo Toivonen', 'Antero Ruban', 'Timi Lukumies'];
-console.log('1. ystäväni: ' + ystavat[0].split(' ')[0] + ' ' + ystavat[0].split(' ')[1]);
-console.log('2. ystäväni: ' + ystavat[1].split(' ')[0] + ' ' + ystavat[1].split(' ')[1]);
-console.log('3. ystäväni: ' + ystavat[2].split(' ')[0] + ' ' + ystavat[2].split(' ')[1]);
-console.log('4. ystäväni: ' + ystavat[3].split(' ')[0] + ' ' + ystavat[3].split(' ')[1]);
+console.log('1. ystäväni: ' + ystavat[0].split(' ').join(' '));
+console.log('2. ystäväni: ' + ystavat[1].split(' ').join(' '));
+console.log('3. ystäväni: ' + ystavat[2].split(' ').join(' '));
+console.log('4. ystäväni: ' + ystavat[3].split(' ').join(' '));
 
 let taysiIkainen;
 const perhe = [
