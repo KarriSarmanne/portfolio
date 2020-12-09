@@ -21,6 +21,7 @@ h1{
   width: 33%;
   margin: auto;
   margin-top: 10px;
+  background: #bbbbff;
   border: 1px #6969ff solid;
   padding: 20px;
   border-radius: 20px;
@@ -33,6 +34,7 @@ h1{
 
 .alue1{
   width: 70%;
+  background: #6969ff80;
   padding: 10px 10px;
   margin: auto;
   border: double;
@@ -56,18 +58,18 @@ h1{
   margin: 0;
   padding: 10px 10px;
   display: block;
-  width: 175px;
+  width: 125px;
   height: 15px;
 }
-.nappula{
+.NAVnappi{
   color: #fff;
   text-decoration-line: underline;
   text-decoration-style: dashed;
 }
-.nappula:hover{
+.NAVnappi:hover{
   color: #ff0000;
 }
-.nappula:active{
+.NAVnappi:active{
   color: #fff;
 }
 
