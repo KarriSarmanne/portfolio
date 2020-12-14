@@ -1,10 +1,11 @@
+<!DOCTYPE html>
 <html>
   <head>
     <title>
       Lähetä viesti
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
     <header>
@@ -22,27 +23,42 @@
         <br>
       </ul>
     </div>
+    <button id="teemaNappi" onclick="teemaVaihto()">Vaihda teemaa</button>
+    <div id="teemaDIV">
+      <p>Vaihda teemaa: </p>
+      <input class="teemaVaihtoehto" id="teema1" type="radio" name="theme" value="vaalea">
+      <label>Vaalea</label>
+      <br>
+      <input class="teemaVaihtoehto" id="teema2" type="radio" name="theme" value="tumma">
+      <label>Tumma</label>
+      <br>
+      <input class="teemaVaihtoehto" id="teema3" type="radio" name="theme" value="varikas">
+      <label>Värikäs</label>
+      <br><br>
+      <input class="teemaTallennus" type="submit" value="Tallenna">
+    </div>
     <br>
-    <div class="alue1">
-      <form id="opiskelija-lomake">
-        <div>
+    <div id="alue1">
+      <form class="lomake">
+        <div class="lomakeElementti">
           <label>Nimi: </label>
           <input type="text" id="nimi">
         </div>
         <br>
-        <div>
+        <div class="lomakeElementti">
           <label>Email: </label>
           <input type="text" id="email">
         </div>
         <br>
-        <div>
+        <div class="lomakeElementti">
           <label>Viesti: </label>
-          <textarea></textarea>
+          <textarea id="viesti"></textarea>
         </div>
         <br>
         <input type="submit" class="lahetanappi" value="Lähetä">
       </form>
     </div>
+    <script src="portfolio.js"></script>
     <script src="scriptEmail.js"></script>
   </body>
 </html>

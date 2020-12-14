@@ -1,5 +1,5 @@
 body{
-  background-color: #e7f2ff;
+  background: #e7f2ff;
   color: #202020;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: normal;
@@ -16,15 +16,14 @@ h1{
 }
 
 
-
-.opinnot{
+#opinnot{
   width: 33%;
   margin: auto;
   margin-top: 10px;
-  background: #bbbbff;
+  background: #cacaff;
   border: 1px #6969ff solid;
   padding: 20px;
-  border-radius: 20px;
+  border-radius: 15px;
   text-align: center;
 }
 #opinnotTaulukko{
@@ -32,15 +31,14 @@ h1{
 }
 
 
-.alue1{
+#alue1{
   width: 70%;
   background: #6969ff80;
-  padding: 10px 10px;
+  padding: 10px;
   margin: auto;
-  border: double;
-  border-color: #6969ff;
+  border: double #6969ff;
 }
-.alue1 h1{
+#alue1 h1{
   padding-left: 10px;
 }
 
@@ -51,14 +49,14 @@ h1{
   height: 75px;
   position: fixed;
   top: 100px;
-  left: 20px;
+  left: 90px;
 }
 .navigaatio{
   list-style-type: none;
   margin: 0;
   padding: 10px 10px;
   display: block;
-  width: 125px;
+  width: 100px;
   height: 15px;
 }
 .NAVnappi{
@@ -73,6 +71,22 @@ h1{
   color: #fff;
 }
 
+#teemaNappi{
+  position: fixed;
+  top: 100px;
+  right: 90px;
+}
+#teemaDIV{
+  display: none;
+  background: #000;
+  color: #fff;
+  position: fixed;
+  top: 120px;
+  right: 90px;
+  padding: 5px;
+}
+.teemaVaihto{}
+
 
 .lomake{
   display: block;
@@ -81,11 +95,15 @@ h1{
 .lomakeElementti input, .lomakeElementti textarea, .lomakeElementti select{
   width: 100%;
 }
+
+
 .laatikko{
+  background: #6969ff50;
   float: left;
   width: 25%;
-  border: 2px solid black;
+  border: 3px double #6969ff;
   padding: 10px;
   box-sizing: border-box;
   margin-top: 25px;
+  height: 100px;
 }

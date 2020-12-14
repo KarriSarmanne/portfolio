@@ -63,3 +63,53 @@ const perheenjasenet = perhe.map(function(perheenjasen){
     console.log("Alaikäiset perheenjäseneni: " + alaikaiset)
   }
 });
+
+
+
+
+function teemaVaihto(){
+  let teema = document.getElementById('teemaDIV');
+  if (teema.style.display == 'none'){
+    teema.style.display = 'block';
+  }else{
+    teema.style.display = 'none';
+  };
+};
+document.querySelector('.teemaTallennus').addEventListener('click', e =>{
+  e.preventDefault();
+  const teema = document.querySelector('input[name="theme"]:checked').value;
+  if (teema == 'vaalea'){
+    document.body.style.background = '#e7f2ff';
+    document.body.style.color = '#202020';
+    document.body.style.textShadow = '';
+    document.getElementById('alue1').style.background = '#6969ff80';
+    document.getElementById('alue1').style.color = '#202020';
+    document.getElementById('alue1').style.borderColor = '#6969ff';
+    document.getElementById('opinnot').style.background = '#bbbbff';
+    document.getElementById('opinnotTaulukko').style.background = '#bbbbff';
+    document.getElementById('laatikko').style.background = '#6969ff50';
+    document.getElementById('laatikko').style.border = '3px double #6969ff';
+  }else if (teema == 'tumma'){
+    document.body.style.background = '#424242';
+    document.body.style.color = '#e7f2ff';
+    document.body.style.textShadow = '0px 0px 2px black';
+    document.getElementById('alue1').style.background = '#6969ff80';
+    document.getElementById('alue1').style.color = '#e6e6e6';
+    document.getElementById('alue1').style.borderColor = '#6969ff';
+    document.getElementById('opinnot').style.background = '#6969ff70';
+    document.getElementById('opinnotTaulukko').style.background = '#6969ff80';
+    document.getElementById('laatikko').style.background = '#6969ff80';
+    document.getElementById('laatikko').style.border = '3px double #6969ff';
+  }else{
+    document.body.style.background = '#ff0033';
+    document.body.style.color = '#00cc00';
+    document.body.style.textShadow = '0px 0px 2px #0000ff';
+    document.getElementById('alue1').style.background = '#33cc33';
+    document.getElementById('alue1').style.color = '#fff';
+    document.getElementById('alue1').style.borderColor = '#0000ff';
+    document.getElementById('opinnot').style.background = '#6969ff';
+    document.getElementById('opinnotTaulukko').style.background = '#ffff00';
+    document.getElementById('laatikko').style.background = '#00ff00';
+    document.getElementById('laatikko').style.border = '3px double #6969ff';
+  };
+});

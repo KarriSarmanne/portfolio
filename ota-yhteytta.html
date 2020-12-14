@@ -20,58 +20,75 @@
         <br>
       </ul>
     </div>
-    <div class="alue1">
+    <button id="teemaNappi" onclick="teemaVaihto()">Vaihda teemaa</button>
+    <div id="teemaDIV">
+      <p>Vaihda teemaa: </p>
+      <input class="teemaVaihtoehto" id="teema1" type="radio" name="theme" value="vaalea">
+      <label>Vaalea</label>
+      <br>
+      <input class="teemaVaihtoehto" id="teema2" type="radio" name="theme" value="tumma">
+      <label>Tumma</label>
+      <br>
+      <input class="teemaVaihtoehto" id="teema3" type="radio" name="theme" value="varikas">
+      <label>Värikäs</label>
+      <br><br>
+      <input class="teemaTallennus" type="submit" value="Tallenna">
+    </div>
+    <div id="alue1">
       <h1>Ota yhteyttä</h1>
-        <form class="lomake">
-          <div class="lomakeElementti">
-            <label for="etunimi">Etunimi:</label>
-            <input type="text" id="etunimi" name="etunimi">
-          </div>
-          <br>
-          <div class="lomakeElementti">
-            <label for="sukunimi">Sukunimi:</label>
-            <input type="text" id="sukunimi" name="sukunimi">
-          </div>
-          <br>
-          <div class="lomakeElementti">
-            <label for="email" id="sahkoposti">Sähköposti:</label>
-            <input type="email">
-          </div>
-          <br>
-          <div class="lomakeElementti">
-            <label for="puhelinnumero">Puhelinnumero:</label>
-            <input type="tel">
-          </div>
-          <br>
-          <div class="lomakeElementti">
-            <label for="ika">Ikä:</label>
-            <input type="number">
-          </div>
-          <br>
-          <div class="lomakeElementti">
-            <label for="syntymaAika">Syntymäaika:</label>
-            <input type="date">
-          </div>
-          <br>
-          <div class="lomakeElementti">
-            <label for="terveiset">Terveiset:</label>
-            <textarea></textarea>
-          </div>
-          <br>
-          <div class="lomakeElementti">
-            <label>Miten haluat, että olen yhteydessä?</label><br>
-            <select>
-              <option value="-">-</option>
-              <option value="puhelimitse">Puhelimitse</option>
-              <option value="sähköpostitse">Sähköpostitse</option>
-              <option value="eiYhteytta">En halua, että minuun otetaan yhteyttä.</option>
-            </select>
-          </div>
-          <br>
-          <input type="submit" value="Lähetä">
-        </form>
+      <form class="lomake">
+        <div class="lomakeElementti">
+          <label for="etunimi">Etunimi:</label>
+          <input type="text" id="etunimi" name="etunimi">
+        </div>
+        <br>
+        <div class="lomakeElementti">
+          <label for="sukunimi">Sukunimi:</label>
+          <input type="text" id="sukunimi" name="sukunimi">
+        </div>
+        <br>
+        <div class="lomakeElementti">
+          <label for="email" id="sahkoposti">Sähköposti:</label>
+          <input type="email">
+        </div>
+        <br>
+        <div class="lomakeElementti">
+          <label for="puhelinnumero">Puhelinnumero:</label>
+          <input type="tel">
+        </div>
+        <br>
+        <div class="lomakeElementti">
+          <label for="ika">Ikä:</label>
+          <input type="number">
+        </div>
+        <br>
+        <div class="lomakeElementti">
+          <label for="syntymaAika">Syntymäaika:</label>
+          <input type="date">
+        </div>
+        <br>
+        <div class="lomakeElementti">
+          <label for="terveiset">Terveiset:</label>
+          <textarea></textarea>
+        </div>
+        <br>
+        <div class="lomakeElementti">
+          <label>Miten haluat, että olen yhteydessä?</label><br>
+          <select>
+            <option value="-">-</option>
+            <option value="puhelimitse">Puhelimitse</option>
+            <option value="sähköpostitse">Sähköpostitse</option>
+            <option value="eiYhteytta">En halua, että minuun otetaan yhteyttä.</option>
+          </select>
+        </div>
+        <br>
+        <input type="submit" value="Lähetä">
+      </form>
+      <div id="laatikot">
         <div class="laatikko" id="yhteystiedot">
-          testi
+          <p>Karri Sarmanne</p>
+          <p>Puhelin: 040 072 5040</p>
+          <p>Email: karri.sarmanne@edu.salpaus.fi</p>
         </div>
         <div class="laatikko" id="uutiset">
           testi
@@ -82,6 +99,8 @@
         <div class="laatikko" id="logo">
           testi
         </div>
+      </div>
     </div>
+    <script src="portfolio.js"></script>
   </body>
 </html>

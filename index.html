@@ -20,9 +20,22 @@
         <br>
       </ul>
     </div>
-    <br>
-    <div class="alue1">
-      <div class="opinnot">
+    <button id="teemaNappi" onclick="teemaVaihto()">Vaihda teemaa</button>
+    <div id="teemaDIV">
+      <p>Vaihda teemaa: </p>
+      <input class="teemaVaihtoehto" id="teema1" type="radio" name="theme" value="vaalea">
+      <label>Vaalea</label>
+      <br>
+      <input class="teemaVaihtoehto" id="teema2" type="radio" name="theme" value="tumma">
+      <label>Tumma</label>
+      <br>
+      <input class="teemaVaihtoehto" id="teema3" type="radio" name="theme" value="varikas">
+      <label>Värikäs</label>
+      <br><br>
+      <input class="teemaTallennus" type="submit" value="Tallenna">
+    </div>
+    <div id="alue1">
+      <div id="opinnot">
         <table id="opinnotTaulukko" border="2">
           <caption><h2>Opintoni</h2></caption>
           <tr>
@@ -48,9 +61,9 @@
           <li>Ei työkokemusta.</li>
           <li>Ei erityistaitoja.</li>
           <li>Luonteenpiirteiltäni olen laiska ja positiivinen.</li> <!--IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII-->
+          <li>Harrastan videopelaamista</li>
         </ul>
       </div>
-      <br>
     </div>
     <script src="portfolio.js"></script>
   </body>
